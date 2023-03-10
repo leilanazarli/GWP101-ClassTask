@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <style>
+        div {
+ background-color: #eeeeee;}
+        
+    </style>
+    <style>
+        input {
+          accent-color: rgb(230, 20, 20);
+        }
+        .nam:hover 
+        {
+           
+           background-color: blue; color: aquamarine;
+        }
+        .sur:hover{
+            background-color: aqua;
+        }
+        .ema:hover{
+            background-color: aqua;
+        }
+        .pas:hover{
+            background-color: aqua;
+        }
+        body
+        {background-color: grey;
+            margin: 0%;}
+            .sub {
+                background-color: rgb(114, 12, 12);
+            }            
+    </style>
+    <style>
+
+    .name
+        {
+            color: blue;
+        }
+        .surname {
+            color: bisque;
+        }
+        .email {
+            color: blueviolet;
+        }
+        .password
+        {color: coral;
+        }
+.password:focus{
+    background-color: darkcyan;
+}
+    </style>
+
+
+</head>
+<body>
+   <div class="1"><center><h1> Css Selectors</h1></center> </div>
+    <center>
+        
+        <h2>Register Form</h2>
+        <label class="name" for="name"><b>First name:</b></label><br>
+        <input
+          type="text"
+          id="name"
+          size="25"
+          class="nam"
+          placeholder="Enter a name..."
+          required
+        /><br /><br />
+        <label class="surname" for="surname"><b>Last name:</b></label> <br>
+        <input
+          type="text"
+          id="surname"
+          class="sur"
+          size="25"
+          placeholder="Enter a surname..."
+          required
+        /><br /><br />
+        <label class="email" for="email"><b>Email: </b>  </label> <br>
+        <input
+          type="email"
+          id="email"
+          class="ema"
+          size="25"
+          placeholder="Enter a email..."
+          required
+        /><br /><br />
+        <label class="password" for="password"><b>Password:</b></label><br>
+        <input
+          type="password"
+          id="password"
+          size="25"
+          class="pas"
+          placeholder="Enter a password..."
+          required
+        /><br /><br />
+        <input type="checkbox" required />
+        <label for="">Accept all requirments</label><br />
+        <input type="radio" name="30" required/>
+         <label for="30"> Teaher</label>
+         <input type="radio" name="30" required/>
+          <label for="30">Student</label>
+          <input type="radio" name="30" required/>
+          <label for="sub">Other</label><br>
+          <button type="submit" id="sub" class="sub" required>Sign in</button><br>
+          Register maybe later:
+          <a href="Userinfo.html" id="7" class="Go back">skip</a> 
+</body>
+</html>
