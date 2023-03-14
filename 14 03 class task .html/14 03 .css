@@ -1,0 +1,28 @@
+.container{display: flex;
+}
+div.box { 
+    display: flex;
+    margin: 20px;
+    height: 90px;
+    width: 100%;
+    border: 2px solid red;
+   font-size: 20px;
+   font-weight: bold;
+    justify-content: center;
+    align-items: center;
+
+}
+h1{text-align: center;}
+section{
+    height: 100%;
+    border: 2px solid black;
+    
+}
+.box:first-child{background-color: aqua;}
+.box:nth-child(2){background-color: rgb(255, 0, 234);}
+.box:nth-child(3){background-color: rgb(111, 155, 41);}
+.box:nth-child(4){background-color: rgb(117, 177, 22);}
+
+
+
+
