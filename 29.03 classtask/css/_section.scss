@@ -1,0 +1,35 @@
+.container {
+  margin: 0;
+  padding: 0 20px;
+  border: 2px solid green;
+  height: 800px;
+  .boxes {
+    height: 100%;
+    display: flex;
+justify-content: center;
+align-items: center;
+
+    .box {
+      width: 180px;
+      height: 180px;
+      border: 3px dotted black;
+      background-color: yellow;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 3s;
+      
+         &:hover{
+            p{display: none;}
+            background-image: url(/mini.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            transform: scale(1.5);
+            transform: rotateX(360deg);
+            
+
+         }
+    }
+  }
+}

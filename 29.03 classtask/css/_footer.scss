@@ -1,0 +1,18 @@
+footer{
+    margin-top: 30px;
+    height: 500px;
+    background-color: rgb(187, 186, 186);
+    display: flex;
+     .footer{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 100px;
+        gap: 100px;
+        li{
+            list-style: none;
+            h1{
+                margin-bottom: 30px;
+            }
+        }
+     }
+}

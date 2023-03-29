@@ -1,0 +1,84 @@
+footer {
+  margin-top: 30px;
+  height: 500px;
+  background-color: rgb(187, 186, 186);
+  display: flex;
+}
+footer .footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 100px;
+  gap: 100px;
+}
+footer .footer li {
+  list-style: none;
+}
+footer .footer li h1 {
+  margin-bottom: 30px;
+}
+
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+
+header {
+  height: 50px;
+  margin-bottom: 30px;
+}
+header nav {
+  width: 100%;
+  padding: 20px;
+  background-color: black;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+header nav ul li {
+  list-style: none;
+}
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  border-radius: 5%;
+  padding: 5px;
+}
+header nav ul li a:hover {
+  color: black;
+  background-color: white;
+}
+
+.container {
+  margin: 0;
+  padding: 0 20px;
+  border: 2px solid green;
+  height: 800px;
+}
+.container .boxes {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .boxes .box {
+  width: 180px;
+  height: 180px;
+  border: 3px dotted black;
+  background-color: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 3s;
+}
+.container .boxes .box:hover {
+  background-image: url(/mini.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: scale(1.5);
+  transform: rotateX(360deg);
+}
+.container .boxes .box:hover p {
+  display: none;
+}/*# sourceMappingURL=style.css.map */
