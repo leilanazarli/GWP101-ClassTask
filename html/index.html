@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>html form</title>
+    <style>
+      input {
+        accent-color: black;
+      }
+    </style>
+  </head>
+  <body style="background-color: firebrick">
+    <section class="sec1">
+      <form>
+        <label for="1">Name:</label>
+        <input type="text" id="1" /><br /><br />
+        <label for="2">Address:</label>
+        <input type="text" id="2" /> <br /><br />
+        <label for="3">City:</label>
+        <input type="text" id="3" /><br /><br />
+        <label for="4">State:</label>
+        <input type="text" id="4" /> <br /><br />
+        <label for="5">Zip:</label>
+        <input type="text" id="5" /> <br /><br />
+        <label for="6">Magazine:</label>
+        <select name="" id="6">
+          <option value="">Newsweek</option>
+          <option value="">VogueMagazine</option></select
+        ><br />
+        <label for="7">Subscription:</label>
+        <label for="1 year">1 year </label>
+        <input type="radio" id="1 year " name="Subscription" />
+        <label for="2 years">2 years</label>
+        <input type="radio" id="2 years " name="Subscription" /> <br />
+        <button type="submit">Send your order</button>
+        <hr />
+      </form>
+    </section>
+    <section class="sec2">
+      <form>
+        <label for="8">Name:</label>
+        <input type="text" id="8" size="60" /><br /><br />
+        <label for="9">Address:</label>
+        <input type="text" id="9" size="60" /> <br /><br />
+        <label for="10">City:</label>
+        <input type="text" id="10" size="45" /><br /><br />
+        <label for="11">State:</label>
+        <input type="text" id="11" size="45" /> <br /><br />
+        <label for="12">Zip:</label>
+        <input type="text" id="12" size="45" /> <br /><br />
+        <label for="mag">Magazine:</label>
+        <select name="mag" id="mag">
+          <option value="">Newsweek</option>
+          <option value="">VogueMagazine</option></select
+        ><br />
+        <label for="subs">Subscription:</label>
+        <label for="1 year">1 year </label>
+        <input type="radio" id="1 year " name="Subscription" />
+        <label for="2 years">2 years</label>
+        <input type="radio" id="2 years " name="Subscription" /> <br />
+        <label for="Additional">Additional Comments:</label><br />
+        <textarea id="Additional" rows="4" cols="60"></textarea><br />
+        <button type="submit">Send your order</button>
+        <button type="reset">reset</button>
+      </form>
+    </section>
+  </body>
+</html>
