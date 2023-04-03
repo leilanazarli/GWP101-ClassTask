@@ -1,0 +1,78 @@
+header .header {
+  margin: 0 auto;
+  padding: 0;
+  background-image: url(/back1.jpeg);
+  height: 750px;
+}
+header .header nav {
+  width: 100%;
+  height: 70px;
+  padding: 20px;
+  background-color: rgb(248, 246, 246);
+  position: fixed;
+}
+header .header nav ul li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  align-items: center;
+}
+header .header nav ul li img {
+  width: 150px;
+}
+header .header nav ul li a {
+  text-decoration: none;
+  color: black;
+  position: relative;
+}
+header .header nav ul li a:hover::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 2px;
+  background-color: red;
+  left: 0;
+  bottom: 0;
+}
+
+section .sec1 {
+  padding: 50px;
+}
+section .sec1 .text {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 50%;
+}
+section .sec1 .text h1 {
+  font-size: 40px;
+  font-weight: 500;
+}
+section .sec1 .text img {
+  width: 20%;
+}
+section .sec1 .text p {
+  font-size: 16px;
+}
+section .sec1 .container {
+  width: 100%;
+}
+
+section .sec2 {
+  height: 60vh;
+  background: url(/people\ \(1\).jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+section .sec2 .opa {
+  height: 100%;
+  background-color: rgba(201, 195, 195, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section .sec2 .opa h1 {
+  color: white;
+}/*# sourceMappingURL=main.css.map */
