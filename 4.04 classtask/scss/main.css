@@ -1,0 +1,62 @@
+.item:nth-child(even) {
+  background-color: blueviolet;
+}
+
+.item:nth-child(odd) {
+  background-color: rgb(29, 139, 38);
+}
+
+.item {
+  width: 200px;
+  height: 200px;
+  border-style: dashed;
+  transition: 3s;
+}
+.item:hover:nth-child(even) {
+  transform: rotateX(90deg);
+  background-image: url(mini.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.item:hover:nth-child(odd) {
+  transform: rotateX(90deg);
+  background-image: url(/minio.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+@keyframes item {
+  0% {
+    transform: rotateX(0deg);
+  }
+  50% {
+    transform: rotateX(90deg);
+  }
+  0% {
+    transform: rotateX(0deg);
+  }
+}
+
+h1 {
+  color: white;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+h2 {
+  position: relative;
+  text-align: center;
+}
+h2:hover::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: red;
+  width: 110px;
+  height: 1px;
+  bottom: 0;
+  left: 45%;
+}/*# sourceMappingURL=main.css.map */
