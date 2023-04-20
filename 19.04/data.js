@@ -2278,3 +2278,9 @@
 //7
 let namecapital=countries_data.map((element)=>element.name||element.capital)
 console.log(namecapital);
+let namecapital1=countries_data.map((element)=>element.capital && element.name)
+console.log(namecapital1);
+//8
+let populations =countries_data.map((element)=>element.population)
+let populationsInTheWorld = populations.reduce((acc , curr)=>+acc+ +curr ,0)
+console.log(populationsInTheWorld);
