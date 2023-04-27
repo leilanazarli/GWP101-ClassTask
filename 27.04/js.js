@@ -32,7 +32,6 @@ email.addEventListener("mouseover", function () {
 })
 
 password.addEventListener("focus", function () {
-    //   password.target.value 
       this.value="****"
 })
 password.addEventListener("mouseover", function () {
@@ -54,6 +53,8 @@ radioinput.forEach(element => {
 submit.id = "submit";
 document.getElementById("submit").disabled = true;
 checkBox.addEventListener("click" , function(){
-    document.getElementById("submit").disabled = false;
-
-})
+    if(namee.value==="`" || password.value==="" ||email.value==="" ||surname.value===""  ){
+    document.getElementById("submit").disabled = true;}
+    else{
+    document.getElementById("submit").disabled = false;}
+    })
