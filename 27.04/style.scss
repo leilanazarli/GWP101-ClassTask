@@ -1,0 +1,13 @@
+.form {
+    height: 95vh;
+    border: 3px dashed green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+
+    .checkedLabel {
+        visibility: hidden;
+    }
+}
