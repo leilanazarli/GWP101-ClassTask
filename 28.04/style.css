@@ -1,0 +1,43 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+table td , table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+table{
+    width: 100%;
+    max-width: 900px;
+    margin: 2px auto;
+    border-collapse: collapse;
+}
+table th {
+    cursor: pointer;
+}
+section{
+    display: flex;
+    flex-direction: column;
+}
+section input{
+    width: 900px;
+    margin: 10px auto;
+    padding: 8px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+.thid .fa-arrow-up{
+    display: inline-block;
+}
+.thid .fa-arrow-down{
+    
+}
+.thname .fa-arrow-up{
+    display: none;
+}
+.thname .fa-arrow-down{
+    display: none;
+}
