@@ -1,0 +1,23 @@
+header{
+    margin-bottom: 20px;
+}
+  header nav {
+    height: 60px;
+    background-color: rgb(23, 88, 209);
+  }
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  li{
+    margin-top: 15px;
+    list-style: none;
+  }
+ a {
+    font-size: larger;
+    color: white;
+    padding: 7px;
+    border-radius: 5%;
+ text-decoration: none;
+  }
