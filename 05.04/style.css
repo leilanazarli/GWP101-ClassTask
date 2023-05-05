@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .table {
+    display: flex;
+    flex-direction: column;
+  }
+  .table table {
+    width: 100%;
+    max-width: 900px;
+    margin: 2px auto;
+    border-collapse: collapse;
+  }
+  .table table th,
+  .table table td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: center;
+  }
+  .table table th {
+    background-color: rgb(51, 145, 145);
+  }
+  .table table td {
+    background-color: rgb(255, 247, 221);
+  }
+  .table table td button {
+    padding: 5px 10px;
+    background-color: brown;
+    color: #fff;
+    border: 1px solid brown;
+    border-radius: 5px;
+  }/*# sourceMappingURL=style.css.map */
