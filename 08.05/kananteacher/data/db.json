@@ -1,0 +1,10 @@
+{
+    "blogs":[
+        {
+            "id":1,
+            "auther":"Nazarli",
+            "content":"lorem ipsum ",
+            "title":"hello hello hello everybody wants to rule the world!"
+        }
+    ]
+}
