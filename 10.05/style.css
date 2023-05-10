@@ -1,0 +1,15 @@
+section{
+    color: #fff;
+    background-color: #1d2630;
+}
+#thfirstname{
+    cursor: pointer;
+}
+.arrowdown{
+    display: none;
+    color: red;
+}
+.arrowup{
+    display: none;
+    color: green;
+}
