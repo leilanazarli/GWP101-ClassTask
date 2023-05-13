@@ -3,6 +3,7 @@ let form=document.querySelector(".form")
 let firstname =document.querySelector("#firstname")
 let lastname =document.querySelector("#lastname")
 let email =document.querySelector("#email")
+let cardnumber =document.querySelector("#cardnumber")
 let submit =document.querySelector(".submit")
 
 
@@ -14,50 +15,58 @@ let arrowup =document.querySelector(".arrowup")
 let arrowdown =document.querySelector(".arrowdown")
 let notification =document.querySelector("#notification")
 
-const alert = (message, type) => {
-    const wrapper = document.createElement('div')
-    wrapper.innerHTML = [
-      `<div class="alert alert-${type} alert-dismissible" role="alert">`,
-      `   <div>${message}</div>`,
-    //   '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
-      '</div>'
-    ].join('')
+
+const date = new Date()
+
+function showMyAlert(classCase , username , date){
+  notification.className=`alert alert-${classCase}`
+  notification.innerHTML=`User : ${username} has been created on ${date}`
+  notification.removeAttribute('hidden')
+  setTimeout(() => {
+    notification.setAttribute('hidden' ,'')
+  }, 3000);
+}
   
-    notification.append(wrapper)
-  }
-   
-
-axios("http://localhost:6300/users").then((res)=>{
-    // console.log(res.data);
-    getData(res.data)
-
-})
-
- function getData(arr){
+  function getData(){
     tbody.innerHTML=""
-    arr.forEach(element => {
+    axios("http://localhost:6300/users").then((res)=>
+      res.data.forEach(element => {
         let tr=document.createElement("tr")
         tr.innerHTML +=`
         <td>${element.name}</td>
         <td>${element.username}</td>
         <td>${element.email}</td>
+        <td>${element.cardnumber.split('').fill("*",0,cardnumber.value.length-4).join('')}</td>
         <td>
-       <div>        
-       <button class="edit btn btn-warning" onclick=edit("${element.id}")>Edit</button>
-       <button class="delete btn btn-danger" onclick=deleteData("${element.id}")>Delete</button></div>
+        <div>        
+        <a class="edit btn btn-warning" onclick=edit("${element.id}")>Edit</a>
+        <a class="delete btn btn-danger" onclick=deleteData("${element.id}")>Delete</a>
+        <a class="detail btn btn-primary" onclick=detailData("${element.id}")>Detail</a>
+        </div>
         </td>
         `
         tbody.append(tr)
-    });
-}
+      })
+    )}
+    getData()
+
 async function deleteData(id){
-    await  fetch(`http://localhost:6300/users/${id}`, {
-        method: "DELETE"
-      } )
-      
-        alert("Danger!!! ,U deleted your data" ,"danger")
+  tbody.innerHTML=""
+    axios.delete(`http://localhost:6300/users/${id}`).then((res)=>{
+      showMyAlert('danger' ,`Danger!!! ,${res.data.username} deleted your data`, date )
+
+    })
+    getData()
    
 }
+
+function detailData(id){
+     axios(`http://localhost:6300/users/${id}`).then((res)=>{
+       showMyAlert('primary' ,`Hello!1 , ${res.data.username} This is about your data`, date )
+
+     })
+}
+
 
 let status=false
 let editedId = null
@@ -71,6 +80,7 @@ async function edit(id){
         firstname.value=data.name;
         lastname.value=data.username;
         email.value=data.email;
+        cardnumber.value=data.cardnumber
         submit.innerHTML="Edit"
 
     })
@@ -80,30 +90,63 @@ async function edit(id){
          let obj={
            name:firstname.value,
            username:lastname.value,
-           email:email.value
+           email:email.value,
+           cardnumber: cardnumber.value  ,
+           date:date.toLocaleDateString()
          }
             if(status){ 
             //    console.log(status);
-               axios.patch(`http://localhost:6300/users/${editedId}`,obj)
-               alert("Good job! ,Your data has been edited" ,"warning")
+               axios.patch(`http://localhost:6300/users/${editedId}`,obj).then((res)=>{
+                 showMyAlert('warning' ,`Hello! ,Good job! ,${res.data.username} data has been edited`,date )
+               })
+               getData()
+
             }  
             else{
-                axios.post("http://localhost:6300/users",obj)
-                alert("Good job! ,Your data has been added" ,"success")
+                axios.post("http://localhost:6300/users",obj).then((res)=>{
+                  showMyAlert('success' ,`Hello! ,${res.data.username} data has been added`,date )
+                })
+               getData()
+
             }
        })
+       function getArr(array){
+        tbody.innerHTML=""
+        array.forEach(element => {
+          let tr=document.createElement("tr")
+          tr.innerHTML +=`
+          <td>${element.name}</td>
+          <td>${element.username}</td>
+          <td>${element.email}</td>
+          <td>${element.cardnumber.split('').fill("*",0,cardnumber.value.length-4).join('')}</td>
+          <td>
+          <div>        
+          <button class="edit btn btn-warning" onclick=edit("${element.id}")>Edit</button>
+          <button class="delete btn btn-danger" onclick=deleteData("${element.id}")>Delete</button>
+          <button class="detail btn btn-primary" onclick=detailData("${element.id}")>Detail</button></div>
+          </td>
+          `
+          tbody.append(tr)
+        })
+       }
  let  searchSort=null
- let arr=[]
+ let arr=[]                                                
        searchinput.addEventListener("input" ,function(event){
         searchSort=true   
-        axios(`http://localhost:6300/users`)
-           .then((res)=>{  
-               console.log(res.data);
-        arr= res.data.filter((item)=> item.name.toLocaleLowerCase().includes(event.target.value.toLocaleLowerCase()) || item.username.toLocaleLowerCase().includes(event.target.value.toLocaleLowerCase())  )
-    // console.log(arr);
-      getData(arr)
+        tbody.innerHTML=""
+    //     axios(`http://localhost:6300/users`)
+    //        .then((res)=>{  
+    //           //  console.log(res.data);
+    // // console.log(arr);
+   
+    axios.get("http://localhost:6300/users").then(res=>{
+
+    arr= res.data.filter((item)=> item.name.toLocaleLowerCase().includes(event.target.value.toLocaleLowerCase()) || item.username.toLocaleLowerCase().includes(event.target.value.toLocaleLowerCase())  )
+
+      getArr(arr)
     })
-    })
+  })
+// })
 
    let bool =false
     thfirstname.addEventListener('click',()=>{
@@ -113,13 +156,13 @@ async function edit(id){
                     arrowdown.style.display='inline-block'
                     arrowup.style.display='none'
                sortedArr= arr.sort((a,b)=>a.name.localeCompare(b.name))
-               getData(sortedArr)
+               getArr(sortedArr)
             }
                  else{
                         arrowup.style.display='inline-block'
                         arrowdown.style.display='none'
                         sortedArr= arr.sort((a,b)=>b.name.localeCompare(a.name))
-                        getData(sortedArr)
+                        getArr(sortedArr)
                     }
         
             }
@@ -130,7 +173,7 @@ async function edit(id){
             axios(`http://localhost:6300/users`)
     .then((res)=>{  
        let sortedData= res.data.sort((a,b)=>a.name.localeCompare(b.name))
-       getData(sortedData)
+       getArr(sortedData)
     })
          }
          else {
@@ -139,7 +182,7 @@ async function edit(id){
                 axios(`http://localhost:6300/users`)
                 .then((res)=>{  
                    let sortedData= res.data.sort((a,b)=>b.name.localeCompare(a.name))
-                   getData(sortedData)
+                   getArr(sortedData)
                 })
             }
        }

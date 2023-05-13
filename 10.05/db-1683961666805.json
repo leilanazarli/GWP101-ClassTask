@@ -1,0 +1,36 @@
+{
+  "users": [
+    {
+      "name": "a;lk;lfas;lfjadlfkje",
+      "username": "as",
+      "email": "pemek@mailinator.com",
+      "cardnumber": "333333355",
+      "date": "5/12/2023",
+      "id": 5
+    },
+    {
+      "name": "john",
+      "username": "Antonette",
+      "email": "Sincere@april.biz",
+      "cardnumber": "333333355",
+      "date": "5/12/2023",
+      "id": 6
+    },
+    {
+      "name": "john",
+      "username": "Antonette",
+      "email": "wewe@gsgdgasasa",
+      "cardnumber": "999999999999",
+      "date": "5/12/2023",
+      "id": 8
+    },
+    {
+      "name": "Nolan",
+      "username": "Hebert",
+      "email": "rijevepot@mailinator.com",
+      "cardnumber": "Pa$$w0rd!",
+      "date": "5/12/2023",
+      "id": 9
+    }
+  ]
+}
