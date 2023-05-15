@@ -1,0 +1,118 @@
+header{
+    nav{
+                width: 100%;
+                background-color: rgb(238, 224, 207);
+                position: fixed;   
+                padding:20px 60px ;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                #menu-bar{
+                    display: none;
+                }
+                ul{
+                    display: flex;
+                    gap: 20px;
+                    align-items: center;
+                    li{
+                        list-style: none;
+                        a{
+                            text-decoration: none;
+                            padding: 10px;
+                            color: black;
+                            border-radius: 7px;
+                            border: 1px solid transparent;
+                            &:hover{
+                                border-color:  black;
+                                color: red;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+.sec1{
+    img{
+        width: 100%;
+    }
+}
+.sec2{
+    h1{
+        text-align: center;
+        position: relative;
+        &::before{
+            position: absolute;
+            content: "";
+            width: 167px;
+            height: 2px;
+            background-color: red;
+            bottom: 0;
+        }
+
+    }
+
+}
+.sec2{
+    .card{
+        display: none;
+    }
+}
+@media only screen and (max-width: 991px) {
+   header{
+       nav{
+           ul {
+               display: none;
+               &.show {
+                   height: 100vh;
+                   flex-direction: column;
+                   justify-content: center;
+                 display: block;
+                 background-color: black;
+                 position: absolute;
+                 top: 75px;
+                 left: 0;
+                 width: 100%;
+               
+               }
+             }
+           #menu-bar {
+             display: block;
+           }
+         }
+        }
+        
+        .sec2{
+            .card{
+                display: none;
+            }
+        }
+    }
+@media only screen and (max-width: 767px) {
+ .sec2{
+     h1{
+         text-align: center;
+         position: relative;
+         &::before{
+             position: absolute;
+             content: "";
+             width: 140px;
+             height: 2px;
+             background-color: red;
+             bottom: 0;
+         }
+ 
+     }
+    .container{
+        table{
+            display: none;
+        }
+        .card{
+            display: flex;
+        }
+    }
+
+ }
+
+}
+

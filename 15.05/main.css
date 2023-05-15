@@ -1,0 +1,47 @@
+header .container {
+  padding: 40px;
+}
+header .container .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container .header .menu {
+  display: none;
+}
+header .container .header .logo {
+  font-size: larger;
+}
+header .container .header .search {
+  position: relative;
+}
+header .container .header .search input {
+  width: 200px;
+  height: 40px;
+  background-color: rgb(240, 240, 240);
+}
+header .container .header .search i {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+header .container .header nav ul {
+  display: flex;
+  gap: 20px;
+}
+header .container .header nav ul li {
+  list-style: none;
+}
+header .container .header nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+@media only screen and (max-width: 991px) {
+  header .container .header .menu {
+    display: block;
+  }
+  header .container .header .search, header .container .header nav {
+    display: none;
+  }
+}/*# sourceMappingURL=main.css.map */
