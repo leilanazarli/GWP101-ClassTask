@@ -1,0 +1,23 @@
+body header .container nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+body header .container nav ul li {
+  list-style: none;
+}
+body header .container nav ul li h1 {
+  font-weight: 700;
+}
+body header .container nav ul li button {
+  font-weight: 300;
+  border: none;
+}
+body .container {
+  width: 100%;
+}
+body.dark header {
+  background-color: rgb(139, 21, 21);
+}
+body.dark .container {
+  background-color: blue;
+}/*# sourceMappingURL=main.css.map */

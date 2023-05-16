@@ -1,0 +1,14 @@
+header .container nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+header .container nav ul li {
+  list-style: none;
+}
+header .container nav ul li h1 {
+  font-weight: 700;
+}
+header .container nav ul li button {
+  font-weight: 300;
+  border: none;
+}/*# sourceMappingURL=detail.css.map */

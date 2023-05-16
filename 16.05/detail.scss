@@ -1,0 +1,21 @@
+header{
+    .container{
+        nav{
+            ul{
+                display: flex;
+                justify-content: space-between;
+                li{
+                    list-style: none;
+                    h1{
+                        font-weight: 700;
+    
+                    }
+                    button{
+                        font-weight: 300;
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+}
