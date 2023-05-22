@@ -1,0 +1,47 @@
+header{
+    width: 100vmax;
+    background-color: white;
+    .container{
+        padding: 30px 0;
+        nav{
+            display: flex;
+            justify-content: space-between;
+           .burger{
+            display: none;
+           }
+           @media only screen  and (max-width:991px){
+            .burger{
+                display: block;
+               } 
+              
+        }
+            ul{
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                li{
+                    list-style: none ;
+                    
+                    a{
+                       
+                        .signin{
+                             color: #7db9e8 !important;
+                            }
+                        text-decoration: none !important;
+                        text-transform: uppercase;
+                        color: rgb(65, 64, 64);
+                        font-weight: 100 !important;
+                        font-family: "Montserrat", sans-serif;
+                        transition: 1s;
+                        &:hover{
+                            color: #7db9e8;
+
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+  
+}

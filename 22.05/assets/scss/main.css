@@ -1,0 +1,399 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400&display=swap");
+* {
+  text-decoration: none;
+  font-family: "Epilogue";
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.contain {
+  max-width: 1200px;
+  margin: 0 auto !important;
+  padding: 0 2%;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100vmax;
+  background-color: white;
+}
+header .container {
+  padding: 30px 0;
+}
+header .container nav {
+  display: flex;
+  justify-content: space-between;
+}
+header .container nav .burger {
+  display: none;
+}
+@media only screen and (max-width: 991px) {
+  header .container nav .burger {
+    display: block;
+  }
+}
+header .container nav ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+header .container nav ul li {
+  list-style: none;
+}
+header .container nav ul li a {
+  text-decoration: none !important;
+  text-transform: uppercase;
+  color: rgb(65, 64, 64);
+  font-weight: 100 !important;
+  font-family: "Montserrat", sans-serif;
+  transition: 1s;
+}
+header .container nav ul li a .signin {
+  color: #7db9e8 !important;
+}
+header .container nav ul li a:hover {
+  color: #7db9e8;
+}
+
+.sec1 {
+  background-image: url("../img/server-banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.sec1 .container {
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+}
+.sec1 .container .top {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+}
+.sec1 .container .top span {
+  border: 1px;
+  background: #fc6428;
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 10px 30px;
+}
+.sec1 .container .bottom {
+  display: flex;
+  margin-bottom: 80px;
+}
+.sec1 .container .bottom .start {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.sec1 .container .bottom .start h1 {
+  font-size: 40px;
+  color: white;
+}
+.sec1 .container .bottom .start h2 {
+  font-size: 28px;
+  color: white;
+  font-weight: 100;
+  font-family: "Montserrat", sans-serif;
+}
+.sec1 .container .bottom .start p {
+  color: white;
+}
+.sec1 .container .bottom .start .lia {
+  display: flex;
+  gap: 40px;
+}
+.sec1 .container .bottom .start .lia li {
+  color: white;
+  list-style: none;
+  margin: 20px;
+}
+.sec1 .container .bottom .start .lia li a {
+  color: white;
+  text-decoration: none;
+}
+.sec1 .container .bottom .start .startednowbtn {
+  width: 200px;
+  padding: 10px;
+  background: #fc6428;
+  border: #fc6428;
+}
+
+.sec2 {
+  height: 100vh;
+}
+.sec2 .container h1 {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  text-align: center;
+  font-size: 52px;
+  margin: 40px;
+}
+.sec2 .container h1::before {
+  content: "";
+  width: 100px;
+  height: 2px;
+  background: #424242;
+  position: absolute;
+  left: 45%;
+  bottom: -6px;
+}
+.sec2 .container .line {
+  display: flex;
+  justify-content: center;
+  content: "-";
+  width: 50px;
+}
+.sec2 .container p {
+  text-align: center;
+  font-size: 14px;
+  line-height: 26px;
+  color: #6b6d6f;
+  margin-bottom: 40px;
+}
+.sec2 .container .cards {
+  text-align: center;
+  height: 200px;
+  width: 270px;
+}
+.sec2 .container .cards h2 {
+  margin: 20px;
+}
+.sec2 .container .cards p {
+  text-align: center;
+}
+
+.sec3 {
+  background: #7db9e8;
+  height: 50vh;
+  color: white;
+}
+.sec3 .container h2 {
+  margin: 50px;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  text-align: center;
+  font-size: 52px;
+  padding-top: 40px;
+}
+.sec3 .container h2::before {
+  content: "";
+  width: 100px;
+  height: 2px;
+  background: #ffffff;
+  position: absolute;
+  left: 45%;
+  bottom: -6px;
+}
+.sec3 .container p {
+  text-align: center;
+}
+.sec3 .container .bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.sec3 .container .bottom .circle {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}
+.sec3 .container .bottom .circle .icon {
+  border: 8px solid rgba(255, 255, 255, 0.5019607843);
+  border-radius: 50%;
+}
+.sec3 .container .bottom .circle .icon i {
+  padding: 10px;
+  background-color: white;
+  border-radius: 50%;
+  color: #7db9e8;
+  font-size: 25px;
+}
+
+.sec4 .container h2 {
+  margin: 50px;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 52px;
+  padding-top: 40px;
+}
+.sec4 .container h2::before {
+  content: "";
+  width: 70px;
+  height: 1px;
+  background: black;
+  position: absolute;
+  left: 45%;
+  bottom: -6px;
+}
+.sec4 .container p {
+  text-align: center;
+  color: #6b6d6f;
+}
+.sec4 .container .cards p {
+  text-align: left;
+}
+
+footer .container {
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .container p {
+  color: #c2bfbf;
+  font-size: 21px;
+}
+footer .container p a {
+  color: #337ab7;
+  text-decoration: none;
+}/*# sourceMappingURL=main.css.map */
