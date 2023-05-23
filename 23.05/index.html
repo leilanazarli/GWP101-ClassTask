@@ -27,7 +27,7 @@
                     </div>
                     <div class="nav-bottom">
                     <a href="#" class="sponsor">Sponsor</a>
-                    <a href="#" class="login">Login</a>
+                    <a href="./userForm.html" class="login">Login</a>
                   </div>
                 </nav>     
               </div>
@@ -50,6 +50,7 @@
                             <option value="How to Adopt">How to Adopt</option>
                           </select>
                         </a></li>
+                        <li><a href="./favorite.html">Favorite</a></li>
                         <li><a href="#">Success Stories</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Contact</a></li>
@@ -219,26 +220,31 @@
         <h1>WAITING CHILDREN</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi unde impedit, <br> necessitatibus, soluta sit quam minima expedita atque corrupti reiciendis.</p>
          <div class="d-flex justify-content-center mt-5">
-        <button type="button" class="btn btn-danger w-25 mb-4" >Find More Waiting Children</button>
-         </div>      
+           <i class="fa-solid fa-arrow-up arrowup" style="font-size: 40px;"></i>
+           <i class="fa-solid fa-arrow-down arrowdown me-5" style="font-size: 40px;"></i>
+        <button type="button" class="btn btn-danger w-25 mb-4  " >Find More Waiting Children</button>
+      <input type="search" class="form-control w-25 h-25 m-1 ms-4" name="" id="search">
+      </div>      
           <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
           </div>
           <div class="carousel-inner">
-            <div class="carousel-item active" >
-              <div class="card" style="width: 18rem;">
+            <div class="carousel-item  din d-flex w-100 gap-3 " >
+
+              <!-- <div class="card" style="width: 18rem;">
                 <img src="./assets/img/children_1.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <div class="d-block">
-                    <h5 class="card-title">${element.}</h5>
-                    <p class="card-text">${element.}</p>
+                    <h5 class="card-title">${element.name}</h5>
+                    <p class="card-text">${element.years} yrs. old</p>
                   </div>
-                  <a href="#" class="btn btn-primary mt-2">Edit</a>
-                  <a href="#" class="btn btn-danger mt-2">Delete</a>
+                  <a href="#" class="btn btn-primary mt-2"  onclick=editUser('${element.id}')>Edit</a>
+                  <a href="#" class="btn btn-danger mt-2"  onclick=DeleteUser('${element.id}')>Delete</a>
+                  <a href="#" class="btn btn-success mt-2"  onclick=AddUser('${element.id}')>Add to Fav</a>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
