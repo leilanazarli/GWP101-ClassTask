@@ -1,0 +1,101 @@
+
+.sec2{
+    height: 100vh;
+    .container{
+        margin-top: 100px;
+    }
+
+}
+.sec3{
+    .container{
+        h1{
+                        margin: 50px;
+                        position: relative;
+                        font-family: "Montserrat", sans-serif;
+                        font-weight: 100;
+                        text-align: center;
+                        font-size: 52px;
+                       padding-top: 40px;
+                        &::before{
+                            content: "";
+                            width: 100px;
+                            height: 2px;
+                            background: #ffffff;
+                            position: absolute;
+                            left: 45%;
+                            bottom: -6px;
+                        }
+                    }
+                    p{
+                        text-align: center;
+                        color: #868e96;
+                    }
+                   
+    }
+}
+footer{
+    background-color: #bc5148;
+    height: 20vh;
+  
+}
+.sec4{
+    height: 100vh;
+    .container{
+        h1{
+            margin: 50px;
+            position: relative;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 100;
+            text-align: center;
+            font-size: 52px;
+           padding-top: 40px;
+            
+        }
+    }
+}
+.sec4{
+    .container{
+        .cards{
+            .card{
+                position: relative;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+                
+                &:hover{
+                    .body{
+                        background:linear-gradient(180deg , rgb(87, 83, 83) -10% ,rgba(226, 223, 223, 0.2) );
+                        position: absolute;
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;
+                        text-align: center;
+                   
+                        width: 100%;
+                        height: 100%;
+
+                        p{
+                            font-weight: bold;
+                            font-size: 30px;
+                            color: white;
+                        }
+                       span{
+                        font-size: 20px;
+                        color: rgb(180, 176, 176);
+                        
+                       }
+                       h5{
+                        font-size: 26px;
+                        color: white;
+
+                       }
+                    }
+                }
+                .body{
+                    display: none;
+                }
+            }
+        }
+    }
+}

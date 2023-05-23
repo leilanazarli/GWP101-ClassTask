@@ -1,0 +1,326 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400&display=swap");
+* {
+  text-decoration: none;
+  font-family: "Epilogue";
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.contain {
+  max-width: 1200px;
+  margin: 0 auto !important;
+  padding: 0 2%;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+}
+header a {
+  text-decoration: none;
+  color: black;
+}
+header a:hover {
+  color: white;
+}
+header .header-top {
+  width: 100%;
+  padding: 20px;
+  background-color: #bc5148;
+}
+header .header-top nav {
+  display: flex;
+  justify-content: space-between;
+}
+header .header-top nav .nav-top {
+  display: flex;
+  gap: 10px;
+}
+header .header-top nav .nav-bottom {
+  display: flex;
+  gap: 10px;
+}
+header .header-top nav .nav-bottom .sponser {
+  color: black;
+}
+header .header-top nav .nav-bottom .sponser:hover {
+  color: white;
+}
+header .header-top nav .nav-bottom .login {
+  color: black;
+  background-color: rgb(224, 167, 9);
+  transition: 0.3s;
+}
+header .header-top nav .nav-bottom .login:hover {
+  color: white;
+}
+header .header-bottom {
+  padding: 20px 0;
+}
+header .header-bottom .container nav {
+  display: flex;
+  justify-content: space-between;
+}
+header .header-bottom .container nav .logo h1 {
+  color: black;
+}
+header .header-bottom .container nav .burger {
+  display: none;
+}
+@media only screen and (max-width: 991px) {
+  header .header-bottom .container nav .burger {
+    display: block;
+  }
+}
+header .header-bottom .container nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+header .header-bottom .container nav ul li {
+  list-style: none;
+}
+header .header-bottom .container nav ul li a {
+  color: rgb(65, 64, 64);
+  font-weight: 100 !important;
+  transition: 1s;
+}
+header .header-bottom .container nav ul li a:hover {
+  color: black;
+}
+
+.sec2 {
+  height: 100vh;
+}
+.sec2 .container {
+  margin-top: 100px;
+}
+
+.sec3 .container h1 {
+  margin: 50px;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  text-align: center;
+  font-size: 52px;
+  padding-top: 40px;
+}
+.sec3 .container h1::before {
+  content: "";
+  width: 100px;
+  height: 2px;
+  background: #ffffff;
+  position: absolute;
+  left: 45%;
+  bottom: -6px;
+}
+.sec3 .container p {
+  text-align: center;
+  color: #868e96;
+}
+
+footer {
+  background-color: #bc5148;
+  height: 20vh;
+}
+
+.sec4 {
+  height: 100vh;
+}
+.sec4 .container h1 {
+  margin: 50px;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  text-align: center;
+  font-size: 52px;
+  padding-top: 40px;
+}
+
+.sec4 .container .cards .card {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.sec4 .container .cards .card:hover .body {
+  background: linear-gradient(180deg, rgb(87, 83, 83) -10%, rgba(226, 223, 223, 0.2));
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+.sec4 .container .cards .card:hover .body p {
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+}
+.sec4 .container .cards .card:hover .body span {
+  font-size: 20px;
+  color: rgb(180, 176, 176);
+}
+.sec4 .container .cards .card:hover .body h5 {
+  font-size: 26px;
+  color: white;
+}
+.sec4 .container .cards .card .body {
+  display: none;
+}
+
+footer .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .container p {
+  color: #c2bfbf;
+  font-size: 21px;
+}
+footer .container p a {
+  color: #337ab7;
+  text-decoration: none;
+}/*# sourceMappingURL=main.css.map */
