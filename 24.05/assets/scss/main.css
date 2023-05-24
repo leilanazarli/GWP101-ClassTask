@@ -1,0 +1,336 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400&display=swap");
+* {
+  list-style: none;
+  text-decoration: none;
+  font-family: "Epilogue";
+}
+
+a {
+  text-decoration: none;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.contain {
+  max-width: 1200px;
+  margin: 0 auto !important;
+  padding: 0 2%;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+}
+header .container {
+  padding: 20px 0;
+}
+header .container nav {
+  display: flex;
+  justify-content: space-between;
+}
+header .container nav .burger {
+  display: none;
+}
+@media only screen and (max-width: 991px) {
+  header .container nav .burger {
+    display: block;
+  }
+}
+header .container nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+header .container nav ul li {
+  list-style: none;
+}
+header .container nav ul li a {
+  color: white;
+  font-weight: 100 !important;
+  transition: 1s;
+}
+header .container nav ul li a:hover {
+  color: red;
+}
+
+.sec1 h1 {
+  color: white;
+  font-size: 48px;
+  text-align: center;
+}
+.sec1 h6 {
+  color: white;
+  font-size: 24px;
+  text-align: center;
+}
+.sec1 button {
+  color: white;
+  border-radius: 0;
+  padding: 10px 20px;
+}
+
+.sec2 {
+  height: 100vh;
+}
+.sec2 .container {
+  margin-top: 100px;
+}
+.sec2 .container h1 {
+  position: relative;
+  font-weight: 700;
+  text-align: center;
+  font-size: 42px;
+  margin: 40px;
+}
+.sec2 .container h1::before {
+  content: "";
+  width: 50px;
+  height: 4px;
+  background: rgb(129, 7, 7);
+  position: absolute;
+  left: 47%;
+  bottom: -10px;
+}
+.sec2 .container p {
+  text-align: center;
+  font-size: 18px;
+  color: #6b6d6f;
+  margin-bottom: 40px;
+}
+
+.sec3 {
+  height: 100vh;
+  margin-bottom: 80px;
+}
+.sec3 .container h1 {
+  position: relative;
+  font-weight: 700;
+  text-align: center;
+  font-size: 42px;
+  margin: 40px;
+}
+.sec3 .container h1::before {
+  content: "";
+  width: 50px;
+  height: 4px;
+  background: rgb(129, 7, 7);
+  position: absolute;
+  left: 47%;
+  bottom: -10px;
+}
+.sec3 .container p {
+  text-align: center;
+  color: #868e96;
+}
+
+.sec4 {
+  height: 100vh;
+}
+.sec4 .container h1 {
+  position: relative;
+  font-weight: 700;
+  text-align: center;
+  font-size: 42px;
+  margin: 40px;
+}
+.sec4 .container h1::before {
+  content: "";
+  width: 50px;
+  height: 4px;
+  background: rgb(129, 7, 7);
+  position: absolute;
+  left: 47%;
+  bottom: -10px;
+}
+.sec4 .container .sec4-p {
+  text-align: center;
+  color: #868e96;
+  margin-bottom: 30px;
+}
+.sec4 .container .card .a-trans {
+  display: none;
+}
+.sec4 .container .card .card-body .tran3s {
+  display: block;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: none;
+  color: #292929;
+  margin-bottom: 30px;
+  transition: 0.6s;
+}
+.sec4 .container .card .card-body .tran3s:hover {
+  color: red;
+}
+.sec4 .container .card .card-body .p-top, .sec4 .container .card .card-body .p-bottom {
+  text-align: left;
+  color: #444343;
+}
+.sec4 .container .card .card-body .readmore {
+  color: black;
+  font-weight: 400;
+  transition: 0.6s;
+}
+.sec4 .container .card .card-body .readmore:hover {
+  color: red;
+}
+
+footer {
+  height: 20vh;
+  background: #1e1e1e;
+}
+footer .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .container p {
+  color: #c2bfbf;
+  font-size: 21px;
+}
+footer .container p a {
+  color: #337ab7;
+  text-decoration: none;
+}/*# sourceMappingURL=main.css.map */
