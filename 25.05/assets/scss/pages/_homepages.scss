@@ -1,0 +1,161 @@
+.sec1{
+   background: url("../img/banner-bg.jpg");
+   .container{
+       .row{
+           .left{
+    
+        h1{
+            font-size: 35px;
+            color: white;
+        }
+        p{
+        font-family: "Poppins", sans-serif;
+        color: white;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1.625em;
+        }
+        button{
+            padding:0 10px ;
+            background-color: white;
+            border: 1px solid white;
+            color: black;
+            font-weight: 500;
+            line-height: 42px;
+            &:hover{
+                color: white;
+                background-color: transparent;
+            }
+        }
+       }
+       
+  }
+   }
+}
+.sec2{
+    .container{
+        padding: 80px;
+        h1{
+            font-family: "Poppins", sans-serif;
+            text-align: center;
+            font-size: 34px;
+    color: #000000;
+    line-height: 1.2em !important;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: 600;
+        }
+        p{
+            text-align: center;
+            color: #777777;
+            font-family: "Poppins", sans-serif;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 1.625em;
+        }
+        .bottom{
+            .cards{
+                .card{
+                    .card-body{
+                        a{
+                            color: black;
+                            font-weight: 600;  
+                            padding: 5px 10px;
+                            &:hover{
+                                color: white;
+                                background-image: linear-gradient(0deg, #828fff 0%, #d496ff 100%);
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+}
+.sec3{
+    background: url("../img/feature-bg.jpg");
+    .container{
+        padding: 90px 0;
+        h1{
+            font-family: "Poppins", sans-serif;
+            font-size: 34px;
+            text-align: center;
+    color: #ffffff;
+    line-height: 1.2em !important;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: 600;
+        }
+        p{
+            text-align: center;
+            color: #777777;
+            font-family: "Poppins", sans-serif;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 1.625em;
+        }
+        .cards{
+            h4{
+                font-size: 18px;
+                font-weight: 700;
+            }
+            .card-body{
+                .d-flex{
+                    &:hover{
+                       color: #8a90ff;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+.sec4{
+    .container{
+        padding: 90px 0;
+        h1{
+            font-family: "Poppins", sans-serif;
+            font-size: 34px;
+            text-align: center;
+    color: #000000;
+    line-height: 1.2em !important;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: 600;
+        }
+        .sec4-p{
+            text-align: center;
+            color: #777777;
+            font-family: "Poppins", sans-serif;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 1.625em;
+        }
+        .data{
+          
+                .card{
+                    .card-body{
+                        display: flex;
+                        flex-direction: column;
+                        // gap: 20px;
+                        justify-content: left;
+                        .button{
+                                   .but{
+                                    padding:5px 10px ;
+                                    border: 1px solid transparent;
+                                    color: white;
+                                    background-image: linear-gradient(0deg, #828fff 0%, #d496ff 100%);
+                                    
+                                    &:hover{
+                                        background:transparent;
+                                        border: grey;
+                                            color: black;
+                                    } 
+                                   }             
+                           }
+                    }
+            }
+        }
+    }
+}

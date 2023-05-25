@@ -1,0 +1,32 @@
+footer{
+    height: 20vh;
+    background:url("../img/footer-bg.jpg");
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .left{
+            p{
+                color:#c2bfbf;
+                font-size: 21px;
+                a{
+                    color: #8a90ff;
+                    text-decoration: none;
+                }
+                span{
+                    color: #8a90ff;
+                }
+            }
+        }
+        .right{
+            a{
+                padding: 10px;
+                color: white;
+                background-color: black;
+                &:hover{
+                    background-color: #8a90ff;
+                }
+            }
+        }
+    }
+}
